@@ -1,0 +1,882 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+
+.swiper-button-next{
+    left:50%;
+    right:auto;
+    top:auto;
+    bottom:3%;
+    margin-left: -13.5px;
+    transform:rotateZ(-90deg);
+    animation:buttonimg 2s infinite;
+}
+@keyframes buttonimg {
+    0%{
+        bottom:3%;
+        opacity: 1;
+    }
+    100%{
+        bottom: 10%;
+        opacity: 0;
+    }
+
+}
+
+
+/*       音频           */
+audio{
+    width: 300px;
+    height: 32px;
+}
+
+#mBtn{
+    position: absolute;
+    top:4%;
+    right: 3%;
+    z-index:100;
+    width: 30px;
+    height:30px;
+    background:rgba(0,0,0,0.5);
+    border-radius: 50%;
+    border:4px solid #201818;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    transform: rotateZ(0deg);
+    animation: mp3key 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+#mBtn img{
+    width: 10px;
+}
+
+@keyframes mp3key {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+.s1{
+    background:url("../img/bg.jpg");
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    color: #cfd5b4;
+}
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7,
+.s8,
+.s9,
+.s10,
+.s11,
+.s12,
+.s13,
+.s14,
+.s15{
+    background:url("../img/2bg.jpg");
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    color: #cfd5b4;
+}
+
+
+/*      第一屏     */
+
+.s1 h1{
+    font-size: 24px;
+    color: #cfd5b4;
+    padding-top:20%;
+}
+.s1 img:nth-of-type(1){
+    position: absolute;
+    width: 80%;
+    padding-top: 15%;
+    left:10%;
+    top: 20%;
+}
+.s1 img:nth-of-type(2){
+    position: absolute;
+    width: 80%;
+    top:20%;
+    left: 10%;
+}
+.s1 img:nth-of-type(3){
+    width:50%;
+    padding-top: 35%;
+}
+.s1 h5{
+    font-size:26px;
+    color: white;
+    padding-top:35%;
+}
+.s1 p:nth-of-type(1){
+    padding-top:6%;
+}
+
+.s1 p:nth-of-type(3){
+    text-align: right;
+    padding-top:25%;
+    color: #fff;
+    font-size: 18px;
+}
+.s1 p:nth-of-type(4){
+    text-align: right;
+    padding-top:3%;
+    color: #fff;
+    font-size: 18px;
+}
+.s1 p:nth-of-type(5){
+    text-align: right;
+    padding-top:3%;
+    color: #fff;
+    font-size: 18px;
+}
+.s1 p{
+    color: #fff;
+    font-size:24px;
+    padding-top:5%;
+}
+
+
+
+
+
+/*   第二屏   */
+.s2 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+.s2 .ani h2{
+    text-align: center;
+}
+.s2 h2 small{
+    display: block;
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-top:10px;
+}
+.s2 h2:before,
+.s2 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s2 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s2 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top: 0;
+}
+
+
+.s2 p{
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    padding-top: 3%;
+}
+.s2 .image{
+    width: 100%;
+    padding-top: 4%;
+}
+
+
+
+
+.s2 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -10%;
+}
+.s2 .footer img{
+    width: 100%;
+}
+
+
+
+
+/*第三屏*/
+
+.s3 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+
+.s3 h2 small{
+    display: block;
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-top:10px;
+}
+.s3 h2:before,
+.s3 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s3 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s3 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:84px;
+    margin-top:89px;
+    top: 0;
+}
+
+.s3 .main img{
+    width: 90%;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+.s3 .main{
+    width: 90%;
+    height: 80%;
+    margin-left:5%;
+}
+.s3 .main p{
+    line-height: 24px;
+    text-align: left;
+    font-size: 16px;
+    padding-top: 5%;
+    color: aliceblue;
+}
+
+.s3 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -18%;
+}
+.s3 .footer img{
+    width: 100%;
+}
+
+/*第四屏*/
+
+
+.s4 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+
+.s4 h2 small{
+    display: block;
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-top:10px;
+}
+.s4 h2:before,
+.s4 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s4 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s4 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:85px;
+    margin-top:89px;
+    top: 0;
+}
+
+.s4 .img img{
+    width:80%;
+    height:20%;
+    margin-top:10px;
+}
+.s4 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -18%;
+}
+.s4 .footer img{
+    width: 100%;
+}
+
+
+
+
+
+/*第五屏*/
+
+.s5 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+
+.s5 h2:before,
+.s5 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s5 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s5 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top:0;
+}
+.s5 p{
+    text-align: left;
+    font-size: 14px;
+}
+.s5 img{
+    width: 100%;
+}
+
+.s5 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -18%;
+}
+.s5 .footer img{
+    width: 100%;
+}
+
+
+
+
+/*第六屏*/
+.s6 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+
+.s6 h2:before,
+.s6 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s6 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s6 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top:0;
+}
+.s6 p{
+    text-align: left;
+    font-size: 14px;
+}
+.s6 img{
+    margin-top: 2%;
+    width: 100%;
+    height: 50%;
+}
+
+
+
+.s6 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -13%;
+}
+.s6 .footer img{
+    width: 100%;
+    height: 10%;
+}
+
+
+  /*第七屏*/
+.s7 img{
+    width: 100%;
+    height: 30%;
+    margin-top: 2%;
+}
+.s7 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+.s7 h2:before,
+.s7 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s7 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s7 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top: 0;
+}
+
+  /*第八屏*/
+
+
+.s8 p{
+    font-size: 4%;
+}
+.s8 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+.s8 h2:before,
+.s8 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s8 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s8 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top: 0;
+}
+
+
+.s8 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -13%;
+}
+.s8 .footer img{
+    width: 100%;
+    height: 10%;
+}
+
+/*第九屏*/
+
+
+.s9 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+.s9 h2:before,
+.s9 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s9 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s9 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top: 0;
+}
+
+.s9 img{
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+}
+
+.s9 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -13%;
+}
+.s9 .footer img{
+    width: 100%;
+    height: 10%;
+}
+
+
+/*第十屏*/
+
+.s10 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+.s10 h2:before,
+.s10 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s10 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s10 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top: 0;
+}
+
+
+.s10 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -13%;
+}
+.s10 .footer img{
+    width: 100%;
+    height: 10%;
+}
+
+/*第十一屏*/
+
+
+.s11 img{
+    width: 100%;
+    height: 40%;
+    margin-top: 2%;
+}
+.s11 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+.s11 h2:before,
+.s11 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s11 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s11 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top: 0;
+}
+
+
+.s11 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -13%;
+}
+.s11 .footer img{
+    width: 100%;
+    height: 10%;
+}
+
+ /*第十二屏*/
+.s12 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+.s12 h2:before,
+.s12 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s12 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s12 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top: 0;
+}
+.s12 p{
+    margin-top: 20%;
+}
+
+.s12 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -13%;
+}
+.s12 .footer img{
+    width: 100%;
+    height: 10%;
+}
+
+
+
+ /*第十三屏*/
+.s13 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+.s13 h2:before,
+.s13 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s13 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s13 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top: 0;
+}
+
+.s13 p{
+    margin-top: 20%;
+}
+.s13 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -13%;
+}
+.s13 .footer img{
+    width: 100%;
+    height: 10%;
+}
+
+
+
+
+
+ /*第十四屏*/
+.s14 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+.s14 h2:before,
+.s14 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s14 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s14 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top: 0;
+}
+
+.s14 p{
+    text-align: left;
+    font-size: 16px;
+}
+.s14 p:nth-of-type(1){
+    color:#c462f1;
+}
+.s14 p:nth-of-type(3){
+    color:#c462f1;
+}
+
+.s14 p:nth-of-type(5){
+    color:#c462f1;
+}
+
+.s14 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -13%;
+}
+.s14 .footer img{
+    width: 100%;
+    height: 10%;
+}
+
+/*第十五屏*/
+
+.s15 h2{
+    position: relative;
+    padding-top: 20%;
+    font-size: 30px;
+}
+.s15 h2:before,
+.s15 h2::after{
+    content:"";
+    width: 10px;
+    height:18px;
+    display: inline-block;
+    position: absolute;
+}
+.s15 h2::before{
+    background:url("../img/zuo.png");
+    background-size:contain;
+    margin-left: -22px;
+    margin-top: 14px;
+}
+
+.s15 h2::after{
+    background:url("../img/you.png");
+    background-size:contain;
+    margin-left:12px;
+    margin-top:89px;
+    top: 0;
+}
+
+.s15 p{
+    text-align: center;
+    font-size:24px;
+    margin-top: 30%;
+}
+.s15 .footer{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -13%;
+}
+.s15 .footer img{
+    width: 100%;
+    height: 10%;
+}
